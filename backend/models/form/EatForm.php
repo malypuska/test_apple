@@ -38,6 +38,7 @@ class EatForm extends Model
             'size' => 'Сколько откусить',
         ];
     }    
+    
     public function validateSize($attribute, $params)
     {
         $this->model->checkStatus();
