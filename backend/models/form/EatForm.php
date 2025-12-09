@@ -27,7 +27,7 @@ class EatForm extends Model
     {
         return [
             [['model'], 'required'],
-            [['size'], 'integer'],
+            [['size'], 'integer', 'min' => 1, 'max' => 100],
             [['size'], 'validateSize'],
         ];
     }
